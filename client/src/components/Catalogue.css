@@ -1,0 +1,19 @@
+.CatalogueGrid{
+    display: grid;
+    grid-template-columns: 1vw 1fr 1vw;
+    grid-template-rows: 1vh 3vh 1vh 1fr;
+}
+
+.CatalogueFilter{
+    grid-column: 2/3;
+    grid-row:2/3;
+
+}
+
+.CatalogueProducts{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,53 @@
+.DetailGrid{
+    display: grid;
+    grid-template-columns: 1vw 1fr 1vw 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 87vh;
+    max-height: 100%;
+}
+
+.DetailImage{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.DetailName{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 10vh;
+}
+
+.DetailDescription{
+    grid-column: 3/6;
+    grid-row: 2/3;
+    align-self: flex-start;
+    font-size: 6vh;
+}
+
+.DetailDescriptionText{
+    grid-column: 3/6;
+    grid-row: 2/3;
+    align-self: center;
+    font-size: 3vh;
+    margin: 1vw;
+}
+
+.DetailPrice{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+}
+
+.DetailStock{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    font-size: 3vh;
+}
