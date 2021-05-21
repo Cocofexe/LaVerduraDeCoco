@@ -1,0 +1,61 @@
+.CartItemGrid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1vw 1fr 1fr 1fr 1fr 1fr 1fr 1vw;
+    width: 100%;
+    max-height: 100vw;
+    height: 20vh;
+}
+
+.CartItemImg{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 10vw;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.CartItemName{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.CartItemPrice{
+    grid-row: 1/2;
+    grid-column: 4/5;
+    justify-self: center;
+    align-self: center;
+}
+
+.CartItenStock{
+    grid-row: 1/2;
+    grid-column: 5/6;
+    justify-self: center;
+    align-self: center;
+}
+
+.CartItemQuantity{
+    grid-row: 1/2;
+    grid-column: 6/7;
+    justify-self: center;
+    align-self: center;
+}
+
+.CartItemDeleteProduct{
+    grid-row: 1/2;
+    grid-column: 7/8;
+    justify-self: center;
+    align-self: center;
+    width: 10vw;
+    height: 4vh;
+    font-size: 3vh;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3vw;
+    background-color: turquoise;
+    color: white;
+    border: none;
+}

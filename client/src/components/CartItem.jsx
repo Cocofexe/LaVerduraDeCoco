@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-
+import './CartItem.css'
 import { changeQuantity, deleteProduct } from '../app/actions';
 
 const CartItem = ({ product }) => {
@@ -18,12 +18,12 @@ const CartItem = ({ product }) => {
         <div className='CartItemGrid'>
             <img className='CartItemImg' src={img} alt={name} />
             <div className='CartItemName'>{`${name}`}</div>
-            <div className='CartItemPrice'>{`${price}`}</div>
-            <div className='CartItemPrice'>Stock: {`${stock}`}</div>
-            <div>
+            <div className='CartItemPrice'>$ {`${price}`}</div>
+            <div className='CartItenStock'>Stock: {`${stock}`}</div>
+            <div className='CartItemQuantity'>
                 <input type='number' value={quantity} onChange={handleChangeQuantity} />
             </div>
-            <button onClick={handleDeleteProduct} >Delete product</button>
+            <button className='CartItemDeleteProduct' onClick={handleDeleteProduct} >Delete product</button>
         </div>
     );
 };

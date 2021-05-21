@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import './Cart.css'
 import { getCart, deleteCart } from '../app/actions';
 import CartItem from './CartItem';
 import CartTotal from './CartTotal';
@@ -14,17 +14,17 @@ const Cart = () => {
     const handleDeleteCart = () => dispatch(deleteCart());
 
     return (
-        <div>
+        <div className='CartGrid'>
             {
                 productsInCart && productsInCart.length ?
                     <div>
-                        <div>
+                        <div className='CartFlex'>
                             {
                                 productsInCart.map(product => <CartItem key={product.id} product={product} />)
                             }
-                            <button onClick={handleDeleteCart} >Delete Cart</button>
+                            <button className='CartDelete' onClick={handleDeleteCart} >Delete Cart</button>
                         </div>
-                        <div>
+                        <div className='CartTotal'>
                             <CartTotal products={productsInCart} />
                         </div>
                     </div>

@@ -1,0 +1,23 @@
+.CartFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.CartDelete{
+    justify-self: center;
+    align-self: center;
+    width: 10vw;
+    height: 4vh;
+    font-size: 3vh;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3vw;
+    background-color: turquoise;
+    color: white;
+    border: none;
+}
+
+.CartTotal{
+    font-size: 2vw;
+}

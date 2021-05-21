@@ -1,0 +1,13 @@
+.CartTotalCheckOut{
+    justify-self: center;
+    align-self: center;
+    width: 15vw;
+    height: 4vh;
+    font-size: 3vh;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3vw;
+    background-color: turquoise;
+    color: white;
+    border: none;
+}
